@@ -3,29 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apologia Site</title>
+    <title>Experiment Site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <section class="index-page">
             <header>
                 <div class="left-header">
                     <img src="./images/logo.png" alt="logo">
                 </div>
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
+                        <a href=""><li>Home</li></a>
+                        <a href=""><li>About Us</li></a>
+                        <li class="dropbtn" onclick="createDropDown()"> Outreaches <i class="fa fa-caret-down"></i></li>
+                        <div class="dropdown-content" id="myDropDown">
+                            <a href="#">Consolacion</a>
+                            <a href="#">Pardo</a>
+                         </div>   
+                         <a href=""><li>Contact Us</li></a>
                     </ul>
                 </nav>
             </header>
-        </section>
-        <main></main>
+        <main>
+            <div class="slider">
+                <!-- slide 1 -->
+                <div class="slide">
+                  <img src="./images/slide-1.jpg" alt="" />
+                </div>
+              
+                <!-- slide 2 -->
+                <div class="slide">
+                  <img src="./images/slide-2.jpg" alt="" />
+                </div>
+              
+                <!-- slide 3 -->
+                <div class="slide">
+                  <img src="./images/slide-3.jpg" alt="" />
+                </div>
+              
+                <!-- slide 4 -->
+                <div class="slide">
+                  <img src="./images/slide-4.jpg" alt="" />
+                </div>
+              
+                <!-- Control buttons -->
+                <button class="btn btn-next"> > </button>
+                <button class="btn btn-prev"> < </button>
+              </div>
+        </main>
         <footer></footer>
 
     </div>

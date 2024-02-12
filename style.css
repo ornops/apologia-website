@@ -1,3 +1,4 @@
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -10,17 +11,17 @@
     margin: 0;
 
 } */
-.index-page{
-    /* background-image: url('./images/background.jpg'); */
-    background-image: url('./images/bg2.jpg');
+ /* .index-page{
+    background-image: url('./images/background.jpg');
+    background-image: url('./images/bg3.jpg');
     background-size: cover;
     position: absolute;
-    top: 40px; /* Header Height */
-    bottom: 20px; /* Footer Height */
+    top: 40px; 
+    bottom: 20px; 
     width: 100%;
-}
+} */
 header{
-    background:rgba(255,255,255, 0.7);
+    background:rgba(135, 132, 132, 0.2);
     /* height: 100%; */
     width: 100%;
     /* padding: 20px; */
@@ -49,3 +50,98 @@ li{
    border-radius: 20px;
    padding: 10px;
 }
+
+nav ul a{
+    list-style: none;
+    color: black;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 120px;
+  }
+.dropbtn:hover{
+    cursor: pointer;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.show {
+    display: block;
+  }
+
+  /* MAIN */
+  main{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .slide {
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    position: absolute;
+    transition: all 0.5s;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; /* <===  */
+    border-radius: 15px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }
